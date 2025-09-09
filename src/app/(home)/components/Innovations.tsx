@@ -13,9 +13,9 @@ const Innovations = () => {
       <div className="bg-gradient-to-b from-black to-gray-900 text-white max-w-7xl mx-auto py-20 px-6 rounded-lg flex flex-col justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center lg:gap-24">
           <div className="space-y-6 flex flex-col justify-center max-w-md mx-auto">
-            <h1 className="text-3xl md:text-4xl font-medium leading-tight">
+            <h2 className="text-3xl md:text-4xl font-medium leading-tight">
               {t("empoweringBusinessTitle")}
-            </h1>
+            </h2>
             <p className="text-sm">
               {t("empoweringBusinessDescription")}
             </p>

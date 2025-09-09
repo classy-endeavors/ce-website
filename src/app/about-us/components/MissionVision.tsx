@@ -18,19 +18,19 @@ const MissionVision = () => {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <div className="flex flex-col gap-4">
-              <h1 className="text-xl font-medium">{t("aboutVisionTitle")}</h1>
+              <h2 className="text-xl font-medium">{t("aboutVisionTitle")}</h2>
               <p className="text-sm">
                 {t("aboutVisionDescription")}
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h1 className="text-xl font-medium">{t("aboutMissionTitle")}</h1>
+              <h2 className="text-xl font-medium">{t("aboutMissionTitle")}</h2>
               <p className="text-sm">
                 {t("aboutMissionDescription")}
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h1 className="text-xl font-medium">{t("aboutValuesTitle")}</h1>
+              <h2 className="text-xl font-medium">{t("aboutValuesTitle")}</h2>
               <p className="text-sm">{t("aboutValuesDescription")}</p>
             </div>
           </div>
