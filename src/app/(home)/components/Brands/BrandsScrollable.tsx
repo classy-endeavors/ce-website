@@ -37,7 +37,7 @@ const BrandCard = ({
           }`}
       >
         <a
-          href="#"
+          href="/"
           target="_blank"
           rel="nofollow noreferrer"
           className="flex items-center justify-center"
