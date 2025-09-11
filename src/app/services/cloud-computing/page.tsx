@@ -52,7 +52,7 @@ the bank. "
       <CloudDepModels />
       <Brands brands={cloudBrandsData} />
       <WhyChooseUs />
-      <FAQ faqs={cloudFaqs} bannerTitle="Frequently Asked Questions" bannerDesc="Frequently Asked Qustions on Cloud Computing" />
+      <FAQ faqs={cloudFaqs} bannerTitle="Frequently Asked Questions" bannerDesc="Find answers to common questions about cloud computing, deployment models, security, and how our solutions can help your business thrive in the digital era."/>
       <ContactUs testimonials={aiTestimonials} />
     </>
   );

@@ -48,21 +48,19 @@ export default function WhyChooseUs() {
   return (
     <Section>
       <SectionTitle title="Why Choose Classy Endeavors for Cloud Computing Services " className="max-w-md mb-8" />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <Card key={index} className="border-none shadow-none">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 flex items-center justify-center rounded-md bg-primary/30 mb-6">
-                  <feature.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-4">{feature.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((feature, index) => (
+          <div key={index} className="p-6">
+            <div className="w-12 h-12 flex items-center justify-center rounded-md bg-primary/30 mb-6">
+              <feature.icon className="w-6 h-6 text-primary" />
+            </div>
+            <h3 className="font-semibold text-foreground mb-4">{feature.title}</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))}
+      </div>
     </Section>
   );
 }
