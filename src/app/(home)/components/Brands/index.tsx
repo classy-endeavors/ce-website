@@ -3,7 +3,7 @@ import BrandsScrollable from "./BrandsScrollable";
 import SectionTitle from "@/components/Common/SectionTitle";
 import { Brand } from "@/types";
 type BrandsProps = {
-  brands?: Brand[];
+  brands: Brand[];
 }
 ;
 const Brands = ({brands}: BrandsProps) => {

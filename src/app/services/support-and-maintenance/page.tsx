@@ -34,7 +34,6 @@ const SupportAndMaintenance = () => {
         title="Software Care Solutions"
         subtitle="At Classy Endeavors, we understand that consistent system performance, secure frameworks, and reliable uptime are essential for business growth. Our software support and maintenance services are designed to optimize your systems and keep operations running seamlessly."
         backgroundImage="/images/services/SupportBackground.svg"
-        keywords={["Software Support", "System Maintenance", "Business Continuity"]}
         section={<ServiceContactForm />}
       />
       <Statistics />

@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import CustomButton from "../CustomButton";
-import { Menu as MenuIcon, X } from "lucide-react"; // icons
+import { Menu as MenuIcon, X } from "lucide-react"; 
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
@@ -38,12 +38,12 @@ const Navbar = ({ className }: { className?: string }) => {
           <HoveredLink href="/about-us">About Us</HoveredLink>
           <MenuItem setActive={setActive} active={active} item="Products">
             <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
-              {/* <ProductItem
+               <ProductItem
                 title="Cloud Computing"
                 href="/services/cloud-computing"
                 description="Scalable cloud solutions for modern businesses."
               />
-              <ProductItem
+              {/*<ProductItem
                 title="Mobile Development"
                 href="/services/mobile-development"
                 description="Build high-performance apps for iOS and Android."
@@ -110,12 +110,12 @@ const Navbar = ({ className }: { className?: string }) => {
 
               {active === "Products" && (
                 <div className="flex flex-col space-y-3 p-4 mt-2 border rounded-lg">
-                  {/* <ProductItem
+                  <ProductItem
                     title="Cloud Computing"
                     href="/services/cloud-computing"
                     description="Scalable cloud solutions for modern businesses."
                   />
-                  <ProductItem
+                  {/* <ProductItem
                     title="Mobile Development"
                     href="/services/mobile-development"
                     description="Build high-performance apps for iOS and Android."
