@@ -54,10 +54,10 @@ const Tools = () => {
           title=" Core Technologies we use for UI/UX Graphic design"
         />
 
-        <Accordion type="single" collapsible className="w-full max-w-4xl">
+        <Accordion type="single" collapsible>
           {toolsData.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-base font-semibold">
+              <AccordionTrigger>
                 {item.category}
               </AccordionTrigger>
               <AccordionContent>

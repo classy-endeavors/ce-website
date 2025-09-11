@@ -17,7 +17,7 @@ const ProductsOffered = () => {
             <h3 className="font-medium text-base">
               {product.title}
             </h3>
-            <p>{product.description}</p>
+            <p className="text-muted-foreground">{product.description}</p>
           </div>
         ))}
       </div>

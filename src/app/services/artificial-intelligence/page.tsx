@@ -11,7 +11,8 @@ import { Solutions } from "./components/Solutions";
 import ContactUs from "@/components/ContactUs";
 import { aiTestimonials } from "@/components/ContactUs/testimonialsData";
 import { Process } from "./components/Process";
-import Steps from "./components/Step";
+import Steps from "../../../components/Common/Steps/Steps";
+import { aiSteps } from "@/components/Common/Steps/stepsData";
 
 export const metadata: Metadata = {
   title: "Services - Artificial Intelligence",
@@ -37,7 +38,7 @@ const ArtificialIntelligence = () => {
       <ServiceFeatures title="What We Offer" features={aiServices} />
       <Solutions />
       <Process />
-      <Steps />
+      <Steps title="How We Build AI Solutions" desc="Answer just a few questions to receive a personalized recommendation specifically designed to align with your business goals and industry needs." buttonCta="Get Started" steps={aiSteps} />
       <ServiceIndustries title="Industries we serve" industries={industries} />
       <FAQ faqs={aiFaqs} bannerTitle="Lead the Market with AI Today!" bannerDesc="AI isn’t the future, it’s the now. Let’s create intelligent solutions that put your business ahead of the curve." bannerCTA="Talk to Our Experts"  />      
       <ContactUs testimonials={aiTestimonials} />

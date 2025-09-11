@@ -47,10 +47,10 @@ const OurValues = () => {
               key={index}
               className="bg-background border border-border rounded-xl p-6 min-h-[280px] flex flex-col"
             >
-              <h1 className="text-base font-medium mb-4">
+              <h2 className="text-base font-medium mb-4">
                 {value.title}
-              </h1>
-              
+              </h2>
+
               <p className="text-sm text-foreground/80 flex-1 mb-6">
                 {value.description}
               </p>

@@ -24,7 +24,7 @@ const ServiceFeatures = ({title, features}: ServiceFeatureProps) => {
               key={index}
               className={`cursor-pointer font-medium py-2 px-4 ${selectedIndex === index
                 ? "text-black border-l-3 border-primary pl-4"
-                : "text-gray-600 hover:text-black"
+                : "text-muted-foreground hover:text-black"
                 }`}
               onClick={() => setSelectedIndex(index)}
             >
@@ -34,8 +34,8 @@ const ServiceFeatures = ({title, features}: ServiceFeatureProps) => {
         </div>
 
         <div className="md:col-span-2 space-y-4">
-          <h3 className="text-xl font-medium">{selected.title}</h3>
-          <p className="max-w-xl">{selected.description}</p>
+          <h3 className="text-base font-medium">{selected.title}</h3>
+          <p className="max-w-xl text-muted-foreground">{selected.description}</p>
           {selected.image && (
             <div className="w-full aspect-video relative max-w-xl h-70 rounded-lg overflow-clip">
               <Image

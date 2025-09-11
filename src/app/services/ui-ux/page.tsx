@@ -37,7 +37,6 @@ and convert. Our UI/UX design services blend creativity, functionality, and
 business goals—turning your vision into intuitive digital products that leave a
 lasting impression."
         backgroundImage="/images/services/UIUXBackground.svg"
-        keywords={["Intuitive Design.", "User-Centric.", "Engaging Experiences"]}
       />
       <ServiceFeatures title="Turning Your Ideas into Seamless Designs" features={uiuxServices} />
       <ProductsOffered />

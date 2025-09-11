@@ -37,7 +37,7 @@ const Challenges = () => {
               <div className="flex flex-col gap-2" key={index}>
                 <div className="flex gap-2 justify-start items-center transition duration-300 hover:text-primary cursor-pointer mb-4">
                   <Icon className="size-4.5 text-primary" />
-                  <h1 className="text-base font-medium">{challenge.title}</h1>
+                  <h2 className="text-base font-medium">{challenge.title}</h2>
                 </div>
                 <p className="max-w-sm text-foreground/80">{challenge.description}</p>
               </div>

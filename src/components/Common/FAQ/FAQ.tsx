@@ -34,7 +34,7 @@ export default function FAQ({bannerTitle, bannerDesc, bannerCTA, faqs} : FAQProp
                 transition={{ duration: 0.4, ease: 'easeOut', delay: index * 0.05 }}
               >
                 <AccordionItem value={`item-${index}`}>
-                  <AccordionTrigger className="text-left font-medium text-base cursor-pointer">
+                  <AccordionTrigger className="text-left font-medium cursor-pointer">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
