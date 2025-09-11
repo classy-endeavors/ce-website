@@ -27,4 +27,19 @@ const brandsData: Brand[] = [
   },
 ];
 
+export const cloudBrandsData: Brand[] = [
+  {
+    id: 1,
+    image: "/images/services/cloud/aws-logo.svg",
+  },
+  {
+    id: 2,
+    image: "/images/services/cloud/azure-logo.svg",
+  },
+  {
+    id: 3,
+    image: "/images/services/cloud/google-cloud.svg",
+  }
+];
+
 export default brandsData;

@@ -122,3 +122,9 @@ export type FaqData = {
   question: string;
   answer: string;
 }
+
+export type Step = {
+  number: string;
+  title: string;
+  description: string;
+}

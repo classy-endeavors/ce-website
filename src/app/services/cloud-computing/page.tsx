@@ -1,18 +1,21 @@
 import React from "react";
 import { Metadata } from "next";
 import { Hero } from "@/components/Common/ServicesHero";
-import Banner from "@/components/Common/Banner";
-import Services from "./components/Services/Services";
-import WhyUs from "@/components/Common/WhyUs/WhyUs";
-import { cloudData } from "@/components/Common/WhyUs/data";
-import TechStack from "./components/TechStack/TechStack";
-import DvtProcesses from "@/components/Common/DvtProcesses";
-import ServiceContactForm from "@/components/Common/ServiceContactForm";
 import Brands from "@/app/(home)/components/Brands";
-import CaseStudies from "@/components/Common/CaseStudies";
-import { caseStudies } from "@/components/Common/CaseStudies/caseStudiesData";
 import FAQ from "@/components/Common/FAQ/FAQ";
-import Testimonials from "@/components/Common/Testimonials";
+import { cloudFaqs } from "@/components/Common/FAQ/faqData";
+import ContactUs from "@/components/ContactUs";
+import { aiTestimonials } from "@/components/ContactUs/testimonialsData";
+import WhatWeOffer from "./components/WhatWeOffer.tsx/WhatWeOffer";
+import CloudServices from "./CloudServices/CloudServices";
+import Steps from "@/components/Common/Steps/Steps";
+import { cloudComputingSteps } from "@/components/Common/Steps/stepsData";
+import CloudBenefits from "./CloudBenefits/CloudBenefits";
+import CloudServicesModels from "./CloudServicesModels/CloudServicesModels";
+import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
+import { HowWeDeliver } from "./HowWeDeliver/HowWeDeliver";
+import CloudDepModels from "./CloudDepModels/CloudDepModels";
+import { cloudBrandsData } from "@/app/(home)/components/Brands/data";
 
 export const metadata: Metadata = {
   title: "Services - Cloud Computing",
@@ -32,19 +35,25 @@ const CloudComputing = () => {
   return (
     <>
       <Hero
-        title="Cloud Consulting Services"
-        subtitle="Unlock the full potential of your cloud infrastructure. At Classy Endeavors, we deliver cloud-first strategies that drive scalability, agility, and resilience across your digital ecosystem. Whether you are starting your cloud journey or optimizing your current infrastructure, our experts provide tailored solutions to meet your business goals."
+        title="Scalable, Secure, and Smarter Cloud Solutions for Your Business"
+        subtitle="At Classy Endeavors, we help businesses harness the full power of the cloud. From 
+optimizing legacy systems to building cloud-native apps, our tailored cloud computing 
+services ensure your business runs faster, scales smarter, and stays secure without breaking 
+the bank. "
+        cta="Get Started with Cloud Transformation"
         backgroundImage="/images/services/CloudBackground.svg"
       />
-      <Brands />
-      <DvtProcesses />
-      <CaseStudies title="Case studies of our cloud computing services" caseStudies={caseStudies} />
-      <TechStack />
-      <Banner
-        title="Ready to begin your cloud journey?"
-        description="Optimize your cloud infrastructure for greater speed, scalability, and efficiency. Schedule your free expert consultation today and unlock the full potential of your cloud environment."
-        buttonText="Contact Us"
-      />
+      <WhatWeOffer />
+      <CloudServices />
+      <Steps title="Our Cloud Expertise" desc="Answer just a few questions to receive a personalized recommendation specifically designed to align with your business goals and industry needs." buttonCta="Get Started" steps={cloudComputingSteps} />
+      <CloudBenefits />
+      <HowWeDeliver />
+      <CloudServicesModels />
+      <CloudDepModels />
+      <Brands brands={cloudBrandsData} />
+      <WhyChooseUs />
+      <FAQ faqs={cloudFaqs} bannerTitle="Frequently Asked Questions" bannerDesc="Frequently Asked Qustions on Cloud Computing" />
+      <ContactUs testimonials={aiTestimonials} />
     </>
   );
 };

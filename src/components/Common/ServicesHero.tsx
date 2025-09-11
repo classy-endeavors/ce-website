@@ -11,8 +11,8 @@ type HeroProps = {
   title: string;
   titleStyles?: string;
   subtitle: string;
+  cta?: string;
   backgroundImage: string;
-  keywords?: string[];
   services?: {
     label: string;
     icon: React.ReactNode;
@@ -24,8 +24,8 @@ export const Hero = ({
   title,
   titleStyles,
   subtitle,
+  cta,
   backgroundImage,
-  keywords,
   services,
   section
 }: HeroProps) => {
@@ -70,7 +70,7 @@ export const Hero = ({
                 {subtitle}
               </motion.p>
               <Button className="bg-background hover:bg-background rounded-full text-foreground p-6 cursor-pointer" onClick={() => router.push("#contact")}
-              >Get Started
+              >{cta || 'Get Started'}
                 <span>
                   <ExternalLink className="size-4" />
                 </span>
