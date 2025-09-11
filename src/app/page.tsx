@@ -9,6 +9,7 @@ import Industries from "./(home)/components/Industries";
 import Statistics from "./(home)/components/Statistics";
 import Innovations from "./(home)/components/Innovations";
 import Blog from "@/components/Common/Blog";
+import brandsData from "./(home)/components/Brands/data";
 
 export const metadata: Metadata = {
   title: "Classy Endeavours",
@@ -20,7 +21,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Brands />
+      <Brands brands={brandsData} />
       <Services />
       <Innovations />
       <Technologies />
