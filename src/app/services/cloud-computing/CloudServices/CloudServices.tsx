@@ -27,7 +27,7 @@ export default function CloudServices() {
     <Section id="cloud-services">
       <div className="flex flex-col md:flex-row justify-between">
         <SectionTitle title="What’s included in our cloud computing services?" />
-        <div className="flex gap-2">
+        <div className="hidden md:flex gap-2">
           <Button
             onClick={handlePrev}
             disabled={index === 0}
@@ -55,7 +55,7 @@ export default function CloudServices() {
           {services.slice(index, index + itemsPerPage).map((service) => (
             <div
               key={service.id}
-              className="border rounded-xl p-6 flex-1 min-w-[400px]"
+              className="border rounded-xl p-6 lg:flex-1 lg:min-w-[400px]"
             >
               <h3 className="text-primary font-semibold mb-2">
                 {String(service.id).padStart(2, "0")}

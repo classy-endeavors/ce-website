@@ -15,7 +15,7 @@ export default function CloudServicesModels() {
         {cloudDepModels.map((model) => (
           <div
             key={model.id}
-            className="border rounded-xl p-6 flex-1 min-w-[400px]"
+            className="border rounded-xl p-6"
           >
             <h3 className="text-primary font-semibold mb-4">
               {String(model.id).padStart(2, "0")}
