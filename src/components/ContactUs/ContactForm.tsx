@@ -110,7 +110,7 @@ const ContactForm = () => {
       const formData = new FormData();
       formData.append(
         "content",
-        `**New Customer Form Submission**\nName: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nPhone: ${data.phone}\nBudget: ${data.budget || "Not specified"}\nMessage: ${data.message}`
+        `**New Customer Form Submission**\nFull Names: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nPhone: ${data.phone}\nBudget: ${data.budget || "Not specified"}\nMessage: ${data.message}`
       );
 
       if (data.file instanceof File) {
