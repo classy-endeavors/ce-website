@@ -1,11 +1,16 @@
-"use client";
 import { Providers } from "./providers";
 import { Footer } from "@/components/ui/large-name-footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Poppins } from "next/font/google";
 import "../styles/index.css";
 import Navbar from "@/components/Common/Navbar";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  verification: {
+    google: "google-site-verification=gQ6gamb08libkZObCPhaFqzJhxnsKqZNak0lGkHOP_k"
+  }
+};
 const poppins = Poppins({
   subsets: ["latin"], 
   weight: ["300", "400", "500", "600", "700"],
