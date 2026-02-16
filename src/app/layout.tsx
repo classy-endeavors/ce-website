@@ -24,7 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <script src=" https://hoox.s3.us-east-1.amazonaws.com/157d5fdb2e0f9ab3-classyendeavors.com-hoox.js" async></script>
+      </head>
 
       <body className={`${poppins.variable}`}>
         <Providers>
